@@ -1,5 +1,5 @@
-import React from "react";
 import {  GooeyCircleLoader, LinneardLoader, SpinningOrbitLoader } from "react-loaders-kit";
+import React from "react";
 import Typed from "react-typed";
 
 function Loader() {

@@ -1,3 +1,4 @@
+import Loader from "./Loader.jsx";
 import React from 'react';
 import { CoffeeOutlined, DollarCircleOutlined, HomeOutlined, TeamOutlined, ToolOutlined } from '@ant-design/icons';
 import Icon from '@ant-design/icons/lib/components/Icon';
@@ -7,7 +8,6 @@ import { MailOutlined, FileTextOutlined } from '@ant-design/icons'
 import '../styles/App.css'
 import { Link, Route, Routes } from 'react-router-dom';
 import  { useState, useEffect } from "react";
-import Loader from "./Loader.jsx";
 import FloatMenu from './FloatMenu';
 import { theme } from 'antd';
 import '../styles/App.css'
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className='App'>
-     <FloatMenu />
+     
     {!loaded ? (
          <Loader />
       ) : (
@@ -116,22 +116,28 @@ function App() {
           <Route path='/about' element={< About />} />
           <Route path='/contact' element={< Contact />} />
           <Route path='/portfolio' element={<Portfolio />}/>
-          </Routes>
+  </Routes>
           
           <Content
             style={{
               margin: '0 16px',
             }}
           >
-            <div
+        <Routes>
+                <Route path='/' element={< Home />} />
+                <Route path='/about' element={< About />} />
+                <Route path='/contact' element={< Contact />} />
+                <Route path='/portfolio' element={<Portfolio />}/>
+        </Routes>
+            {/* <div
               style={{
                 padding: 24,
                 minHeight: 360,
                 background: colorBgContainer,
               }}
             >
-              <Hero />
-            </div>
+              
+            </div> */}
           </Content>
           <Footer
           style={{
@@ -147,14 +153,15 @@ function App() {
           Precision Stone ©2023 Built by <a href='www.mackgrissom.io'> Mack Grissom <CoffeeOutlined size={5}/></a> 
           </span>
         </Footer>
+
+        <FloatMenu />
         </Layout>
-        
-       
       </Layout>
     
       
        
-    )} </div>
+    )} 
+    </div>
  
   )
 }
