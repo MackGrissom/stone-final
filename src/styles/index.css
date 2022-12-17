@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .App {
+width: 120%!important;
+
+} */
+/* #root > div > section {
+    background-image: url('/home/mackgrissom/code/MackGrissom/ant-stoneworks/precisionstone/src/assets/Untitled design.png')!important;
+    background-size: cover;
+    z-index: 1;
+} */
+/* .hero {
+    background-image: url('/home/mackgrissom/code/MackGrissom/ant-stoneworks/precisionstone/src/assets/Untitled design.png')!important;
+    background-size: cover;
+    height: 110%;
+    width: 105%;
+   margin-bottom: 40px;
+   padding-bottom: 70px;
+    
+} */
+.reaciconz {
+    display: flex!important;
+    align-items: baseline!important;
+}
+
+
+.ant-menu-item:hover{  
+    background-color: #6D604D!important;
+    color: rgba(255, 255, 255, 0.64)!important;
+    border-color: white!important;
+    border-width: 5px;
+}
+
+.ant-menu-item{
+    border-width: 1px;
+    padding:5px;
+    border-color: black;
+}
+/* Main {
+    padding: 0!important;
+    margin: 0!important;
+    width: 100%!important;
+   
+} */
+
+section {
+    background-color: #161719!important;
+    
+}
+
+.banner-logo {
+    width: 20%;
+    display: inline;
+    padding-top: 0px;
+}
+
+
+
+
+
+.ant-card-home:hover {
+    opacity: 90%;
+    transform: scale(110%); 
+   background-color: #6D604D;
+   color: black!important;
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.ant-card-home {
+font-size: 26px;
+font-weight: bold;
+width: 100%;
+border: 3px solid #6d604d!important;
+background-color: white!important;
+color: black;
+border-width: 10px;
+
+
+}
+
+.home-images {
+    box-shadow: 20px blue;
+}
+
+
+.design-tool-img:hover {
+opacity: 90%!important;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    margin: -1%;
+    padding-top: 300px;
+
+}
+
+html {
+    background-color: #161719;
+  
+}
+
+/* body > div:nth-child(4) > div > div.ant-image-preview-wrap > div > div.ant-image-preview-content > div > div > img {
+    display: inline-flex;
+} */
+
+.portfolio-logo {
+    height: 50%;
+    width: 50%;
+    left: 201px;
+    position: relative;
+}
+
+
+.bottom-menu {
+    visibility: visible!important;
+}
+
+@media only screen and (max-width:600px){
+    .card-container {
+        display: contents;
+    }
+}
+@media only screen and (max-width:600px){
+    .design-home-container {
+        display:block;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .description-p {
+        font-size:12px!important;
+    }
+}
+
+.map-desc {
+    font-style: italic;
+    font-size: 17px;
+}
+
+/* #root > div > section > section > main > section > div.px-12.mx-auto.max-w-7xl.opacity {
+    margin-left:137px;
+} */
+
+
+
+#root > div > section > section > main > section > div.px-12.mx-auto.max-w-7xl.opacity > div.w-full.mx-auto.mt-20.text-center.md\:w-10\/12 > div.flex.align-center.justify-center.pb-40.w-\[100\%\].ml-20 > span > strong {
+position: relative;
+top: 107px;
+}
+
+
+#root > div > section > section > main > section > div.px-12.mx-auto.max-w-7xl.opacity > div.w-full.mx-auto.mt-20.text-center.md\:w-10\/12 > div.flex.justify-evenly.card-container {
+    margin-top: -57px;
+}
+
+#root > div > section > section > main > section > div.px-12.mx-auto.max-w-7xl.opacity > div.w-full.mx-auto.md\:w-11\/12.xl\:w-9\/12.md\:text-center.p-18 > p {
+    padding: 0;
+}
+
+
+ul {
+    text-align: left!important;
+   
+}
+
+* {
+    margin:0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+
+ .hero {
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+

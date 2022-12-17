@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'loaders.css/src/animations/semi-circle-spin.scss';
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+
+/* main {
+  padding: 0!important;
+} */
+
+/* html {
+  text-align: center;
+} */
+
+#root > div > section > aside > div > span {
+  display: none;
+}
+
+header {
+  height: 0px!important;
+}
+
+/* logo in the header  */
+/* #root {
+  background-color: #161719;
+} */
+
+.logosvg {
+  width: 12%;
+  margin: -20px;
+  padding: 0;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  display: block;
+  padding-left: 26px;
+}
+
+.footer-color {
+  background-color: #161719!important;
+  color: white!important;
+}
+.content-color {
+  background-color: #161719!important;
+}
+
+.description-p {
+  color: D2B48C!important;
+  padding: 0px!important;  
+  position: relative!important;
+  text-align: left!important;
+  font-size: 15px!important;
+  width: 70vh!important;
+
+}
+
+/* removed unecessary margin */
+#root > div > section > section > main {
+  margin: 0!important;
+}
+/* 
+ */
+
+/* removed weird "contact' from header */
+ #root > div > section > section > div  {
+  display: none;
+ }
+
+ /*  */
+
+/* removed hero background color */
+ #root > div > section > section > main > div {
+  background:none!important;
+ }
+ /*  */
+
+ 
+
+
+.footer-image {
+  width: 50%;
+ padding: 10px;
+}
+
+.footer-img-container {
+  display: inline-flex;
+  width: 23%;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.emphasis-text {
+color:skyblue;
+}
+
+
+#root > div > section > section > main > section > div {
+  height:95%;
+  width: 95%;
+}
+
+
+
+
+body > div:nth-child(3) > div > div.ant-image-preview-wrap > div > div.ant-image-preview-content > div > div > img {
+  display: inline!important;
+}
+
+.footer-image {
+  width: 50%;
+ padding: 10px;
+}
+
+.footer-img-container {
+  display: inline-flex;
+  width: 23%;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+
+
+
+.portfolio-logo2 {
+  height: 20%;
+  width: 20%;
+  left: 40%;
+  position: relative;
+}
+
+
+
+.design-div{
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: right;
+} 
+
+.design-nav {
+  width: 112vh;
+  justify-content: space-around;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.kitchen-nav {
+  justify-content: end!important;
+}
+
+.design-arrow-buttons {
+  background-color: black;
+  color: blue;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner-logo {
+  width: 50%;
+}
+
