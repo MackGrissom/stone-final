@@ -13,11 +13,12 @@ function Loader() {
 
   return (
     <div className="loader">
+      
         <GooeyCircleLoader {...loaderProps} />
         <Typed
           className="loader-text, text-white"
-          strings={["Loading..."]}
-          typeSpeed={60}
+          strings={["Welcome To Precision Stoneworks.."]}
+          typeSpeed={10}
           backSpeed={0}
         />
     </div>

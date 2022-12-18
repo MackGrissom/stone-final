@@ -4,7 +4,7 @@ import { CoffeeOutlined, DollarCircleOutlined, HomeOutlined, TeamOutlined, ToolO
 import Icon from '@ant-design/icons/lib/components/Icon';
 import { Breadcrumb, Image, Layout, Menu,  } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
-import { MailOutlined, FileTextOutlined } from '@ant-design/icons'
+import { MailOutlined, FileTextOutlined, DoubleLeftOutlined } from '@ant-design/icons'
 import '../styles/App.css'
 import { Link, Route, Routes } from 'react-router-dom';
 import  { useState, useEffect } from "react";
@@ -16,7 +16,9 @@ import Portfolio from './Portfolio';
 import About from './About';
 import Contact from './Contact';
 import Hero from './Hero';
-import Logo from './Logo';
+import Logo from '../assets/logo.png';
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
 
 function App() {
   
@@ -36,7 +38,7 @@ function App() {
 
   return (
     <div className='App'>
-     
+     <FloatMenu />
     {!loaded ? (
          <Loader />
       ) : (
@@ -48,21 +50,27 @@ function App() {
       >
         <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)} style={{ background:'#161719', overflow: 'auto',
         height: '100vh',
-        position: 'inline',
-        left: 0}} trigger={null}>
+        position: 'fixed',
+        left: 0}}
+        className='hidden lg:block  color-white'
+       >
           <div
             style={{
               height: 32,
               margin: 16,
-              background: 'black',
+              background: 'none',
             }} className='logo'
-          />
+          >
         
-       
-      
+        <Icon component={() => (<img src={Logo}/>)} className='menu-icon w-[70%]'/>
+
+      </div>
               <Menu 
               defaultSelectedKeys={'Home'}
-              mode={'inline'} style={{ background:'#161719', color:'white' }}>
+              selectedKeys={[location.pathname]}
+              mode={'inline'} style={{ background:'#161719', color:'white' }} 
+              className='!sm:hidden color-white'
+              >
 
                 <Menu.Item key='Home' style={{height:50}} className='ant-menu-item'>
                   <Link to='/'/>
@@ -91,7 +99,7 @@ function App() {
                 <Menu.Item key='Portfolio' style={{height:50}} className='ant-menu-item'>
                   <a href='/portfolio'>
                   <FileTextOutlined /> &nbsp;
-                  Our Designs
+                  Gallery
                   </a>
                 </Menu.Item>
                 <Menu.Item key='Contact' style={{height:50}} className='ant-menu-item'>
@@ -100,6 +108,7 @@ function App() {
                   Contact Us
                   </a>
                 </Menu.Item>
+                
   </Menu>
         </Sider>
         <Layout className="site-layout">
@@ -124,32 +133,26 @@ function App() {
                 <Route path='/contact' element={< Contact />} />
                 <Route path='/portfolio' element={<Portfolio />}/>
         </Routes>
-            {/* <div
-              style={{
-                padding: 24,
-                minHeight: 360,
-                background: colorBgContainer,
-              }}
-            >
-              
-            </div> */}
+           
+
+
           </Content>
           <Footer
           style={{
             textAlign: 'center',
           }} className='footer-color'
         >
-      <p className='text-center text-white text-[10px]'> 1090 Parkway Industrial Park Dr, Buford, GA 30518 <br/> <br/>
-  (770) 271-6907</p>
           <br/>
           <span>
           Home | Legal | Contact
           <br/>
+      <p className='text-center text-white text-[10px]'> 1090 Parkway Industrial Park Dr, Buford, GA 30518 <br/> &nbsp;
+  (770) 271-6907</p>
           Precision Stone ©2023 Built by <a href='www.mackgrissom.io'> Mack Grissom <CoffeeOutlined size={5}/></a> 
           </span>
         </Footer>
 
-        <FloatMenu />
+        
         </Layout>
       </Layout>
     

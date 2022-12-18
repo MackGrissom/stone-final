@@ -11,13 +11,16 @@
   display: block;
 }
 
-/* main {
-  padding: 0!important;
-} */
+/* HERO */
+.hero-logo {
+  animation:animate__bounceInDown;
+  animation-duration: 2s;
+}
 
-/* html {
-  text-align: center;
-} */
+/* Sider menu bottom */
+#root > div > section > aside > div.ant-layout-sider-trigger {
+  background: none!important;
+}
 
 #root > div > section > aside > div > span {
   display: none;
@@ -27,10 +30,14 @@ header {
   height: 0px!important;
 }
 
-/* logo in the header  */
-/* #root {
-  background-color: #161719;
-} */
+
+
+img:hover {
+    transform: scale(1.5)!important;
+  
+}
+
+
 
 .logosvg {
   width: 12%;
