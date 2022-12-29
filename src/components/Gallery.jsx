@@ -6,7 +6,7 @@ import { photos } from "./photos";
 
 
 
-function Gallery() {
+function PhotoGallery() {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -19,25 +19,38 @@ function Gallery() {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
+  const customStyles = {
+    view: () => ({
+        // none of react-images styles are passed to <View />
+        position: 'relative',
+        '& > img': {
+            position: 'relative',
+            margin: '0 auto'
+        },
+    })
+};
 
   return (
-    <>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
+    <div className='!w-[10%] block'>
+    <Gallery photos={photos} onClick={openLightbox} />
+    <ModalGateway>
         {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
+            <Modal onClose={closeLightbox}>
+                <Carousel
+                    currentIndex={currentImage}
+                    styles={customStyles}
+                    views={photos.map(x => ({
+                        ...x,
+                        srcset: x.srcSet,
+                        caption: x.title
+                    }))}
+                />
+            </Modal>
         ) : null}
-      </ModalGateway>
-    </>
+    </ModalGateway>
+</div>
   );
 }
-render(<Gallery />, document.getElementById("gallery"));
+render(<PhotoGallery />, document.getElementById("app"));
+
+

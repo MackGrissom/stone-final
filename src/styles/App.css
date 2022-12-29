@@ -2,7 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* gallery home page */
+.react-photo-gallery--gallery {
+  width: 80%!important;
+  margin-left: 15%;
+  /* justify-content: cente!important;
+  display: flex!important;
+  align-items: center!important;
+  flex-flow: none!important; */
+  
+  
+}
 
+.hero {
+  background-image: url('/home/mackgrissom/code/MackGrissom/final-precision/stone-final/src/assets/BathroomCard.jpg');
+}
+
+/* gallery grid kitchen */
+#rc-tabs-1-panel-1 > div {
+  width: 60%;
+}
 
 .loader-hidden {
   display: none;
@@ -15,6 +34,10 @@
 .hero-logo {
   animation:animate__bounceInDown;
   animation-duration: 2s;
+}
+
+.hero-logo:hover {
+transform: none!important;
 }
 
 /* Sider menu bottom */
@@ -49,6 +72,8 @@ img:hover {
   display: block;
   padding-left: 26px;
 }
+
+
 
 .footer-color {
   background-color: #161719!important;

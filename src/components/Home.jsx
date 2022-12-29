@@ -1,8 +1,8 @@
 
 import '../styles/App.css'
 import Hero from './Hero'
-import Gallery from 'react-photo-gallery'
-import { photos } from './photos'
+import PhotoGallery from 'react-photo-gallery'
+import { kitchenphotos } from './photos'
 
 
 
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
     <Hero/>
-    <Gallery photos={photos}/>
+    <PhotoGallery photos={kitchenphotos} className='gallery'/>
     </>
   )
 }

@@ -108,6 +108,12 @@ function App() {
                   Contact Us
                   </a>
                 </Menu.Item>
+                <Menu.Item key='Contact' style={{height:50}} className='ant-menu-item'>
+                  <a href='/about'>
+                  <TeamOutlined/> &nbsp;
+                  About Us
+                  </a>
+                </Menu.Item>
                 
   </Menu>
         </Sider>
