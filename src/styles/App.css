@@ -4,7 +4,7 @@
 
 /* gallery home page */
 .react-photo-gallery--gallery {
-  width: 80%!important;
+  width: 80vw!important;
   margin-left: 15%;
   /* justify-content: cente!important;
   display: flex!important;
@@ -15,7 +15,8 @@
 }
 
 .hero {
-  background-image: url('/home/mackgrissom/code/MackGrissom/final-precision/stone-final/src/assets/BathroomCard.jpg');
+  /* background-image: url('/home/mackgrissom/code/MackGrissom/final-precision/stone-final/src/assets/BathroomCard.jpg');
+  object-fit: cover; */
 }
 
 /* gallery grid kitchen */
@@ -55,10 +56,10 @@ header {
 
 
 
-img:hover {
+/* img:hover {
     transform: scale(1.5)!important;
   
-}
+} */
 
 
 
@@ -205,3 +206,6 @@ body > div:nth-child(3) > div > div.ant-image-preview-wrap > div > div.ant-image
   width: 50%;
 }
 
+/* html {
+  background-image: url('/home/mackgrissom/code/MackGrissom/final-precision/stone-final/src/assets/marble2.jpg');
+} */

@@ -12,15 +12,7 @@ width: 120%!important;
     background-size: cover;
     z-index: 1;
 } */
-/* .hero {
-    background-image: url('/home/mackgrissom/code/MackGrissom/ant-stoneworks/precisionstone/src/assets/Untitled design.png')!important;
-    background-size: cover;
-    height: 110%;
-    width: 105%;
-   margin-bottom: 40px;
-   padding-bottom: 70px;
-    
-} */
+
 .reaciconz {
     display: flex!important;
     align-items: baseline!important;
@@ -188,4 +180,13 @@ ul {
     align-items: center;
 } 
 
+.ant-card-home {
+    margin: 0;
+    padding: 0;
+}
 
+#root > div > section > section > main > div.flex.justify-evenly.card-container.mb-20.border-\[red\] {
+    padding: 0;
+    display: flex!important; 
+    justify-content: center;
+}
